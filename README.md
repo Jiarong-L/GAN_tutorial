@@ -24,7 +24,7 @@ D希望区分Fake/Real（最大化V），而G希望混淆D的判断（最小化V
 
 * 注意激活函数的取值范围，注意 FakeImgs 与 RealImgs 的取值范围应一致, e.g. [0,1] or [0,255] or [-1,1]
 
-
+* Generative models 不只有 GAN，还可以用 RL 等方式优化 decoder
 
 
 ### Readings
