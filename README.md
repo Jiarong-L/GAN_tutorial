@@ -51,7 +51,12 @@ lr_schedule: https://zhuanlan.zhihu.com/p/465097436
 FBGAN: https://zhuanlan.zhihu.com/p/71741284     
 
 
-
+[Version Compatibility: torch & torchtext](https://pypi.org/project/torchtext/)，否则会卸载torch后自动安装cpu版本
+```bash
+pip3 install torch==2.2.0  --index-url https://download.pytorch.org/whl/cu121
+pip3 install torchtext==0.17.0  portalocker
+## torchvision torchaudio 
+```
 
 
 
