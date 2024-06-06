@@ -45,6 +45,7 @@ D希望区分Fake/Real（最大化V），而G希望混淆D的判断（最小化V
 
 * Generative models 不只有 GAN，还可以用 RL 等方式优化 decoder
 
+* [register_buffer()](https://blog.csdn.net/weixin_46197934/article/details/119518497)
 
 ### Readings
 
