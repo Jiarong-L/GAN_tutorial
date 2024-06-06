@@ -18,6 +18,8 @@ D希望区分Fake/Real（最大化V），而G希望混淆D的判断（最小化V
 
 ### Tips
 
+* [SHAP](https://shap.readthedocs.io/en/latest/index.html) 尝试见 'Basis_PyTorch.ipynb'
+
 * 图像GAN的评价指标
     - Inception Score：将生成图像输入预训练好的Inception-v3模型，更**真实**图像的分类概率比较集中(e.g.[0.9999,0.00001,0,0,0,0,...])；而图像类别的分布均匀与否也可以反应**多样性**
     - FID：提取真实样本（也使用Inception-v3模型）、生成样本的分布参数，计算两个分布之间的距离
@@ -51,11 +53,23 @@ lr_schedule: https://zhuanlan.zhihu.com/p/465097436
 FBGAN: https://zhuanlan.zhihu.com/p/71741284     
 
 
-[Version Compatibility: torch & torchtext](https://pypi.org/project/torchtext/)，否则会卸载torch后自动安装cpu版本
+
+### Version Compatibility
+
+注意版本 Compatibility: torch & torchvision & [torchtext](https://pypi.org/project/torchtext/)& [torchaudio](https://pytorch.org/audio/main/installation.html#compatibility-matrix)，否则会卸载torch后自动安装cpu版本
 ```bash
-pip3 install torch==2.2.0  --index-url https://download.pytorch.org/whl/cu121
-pip3 install torchtext==0.17.0  portalocker
-## torchvision torchaudio 
+pip install torch==2.2.0  --index-url https://download.pytorch.org/whl/cu121
+pip install torchtext==0.17.0  portalocker
+pip install torchvision==0.17.0
+pip install torchaudio==2.2.0
+
+
+           py:3.11.9
+torch                     2.2.0+cu121
+torchaudio                2.2.0
+torchdata                 0.7.1
+torchtext                 0.17.0
+torchvision               0.17.0
 ```
 
 
