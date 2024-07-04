@@ -63,7 +63,9 @@ pip install torch==2.2.0  --index-url https://download.pytorch.org/whl/cu121
 pip install torchtext==0.17.0  portalocker
 pip install torchvision==0.17.0
 pip install torchaudio==2.2.0
-
+pip install torch-scatter torch-sparse torch-cluster -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
+# pip install torch-spline-conv 
+pip install torch-geometric
 
            py:3.11.9
 torch                     2.2.0+cu121
